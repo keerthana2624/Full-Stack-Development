@@ -14,4 +14,12 @@
     console.log(2e308);     
     console.log(1e308 * 10);
     console.log(2e400);
+    // (ii)Negative Infinity
+    console.log(-100 / 0);        
+    console.log(-200 / 0);
+    console.log(-50 / 0);         
+    console.log(-1e308 * 2); 
+    console.log(-10e308)
+   
+
 
