@@ -52,6 +52,17 @@
     console.log(undefined < 0); 
     console.log(undefined == 0);
 
+// 6.Unary operator
+    console.log(30)
+    console.log("3.14");
+    console.log(typeof "hello");
+    console.log(!true);
+    console.log(-true);
+    console.log(!0);
+
+// 7.Logical operator
+
+
 
 
    
