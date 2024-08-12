@@ -20,12 +20,20 @@
     console.log(-50 / 0);         
     console.log(-1e308 * 2); 
     console.log(-10e308)
-      // (iii)NaN 
-      console.log("k"*"k")
-      console.log(0 / 0)
-      console.log("hello" * 2);
-      console.log("10" - "five"); 
-      console.log("hello" / 3);
+    // (iii)NaN 
+    console.log("k"*"k")
+    console.log(0 / 0)
+    console.log("hello" * 2);
+    console.log("10" - "five"); 
+    console.log("hello" / 3);
+//  3.String
+    console.log("Hello guys");
+    console.log('funny program');
+    console.log(`In the year ${20001}`);
+    console.log("hii\nhow r u?");
+    console.log("Concatenation" + "works!");
+
+
    
 
 
