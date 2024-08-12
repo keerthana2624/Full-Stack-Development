@@ -32,6 +32,13 @@
     console.log(`In the year ${20001}`);
     console.log("hii\nhow r u?");
     console.log("Concatenation" + "works!");
+//  4.Boolean
+    console.log(5>3)
+    console.log(10==5)
+    console.log(6>4>1)
+    console.log(true||false)
+    console.log(true&&false)
+
 
 
    
