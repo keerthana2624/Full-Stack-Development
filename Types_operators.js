@@ -75,6 +75,13 @@
     console.log("keerthi" === "keerthana"?"same":"different");
     console.log(60 <= 50 ? "Below or equal to 50" : "Above 50");
 
-   
+// 9.Automatic type conversion
+    console.log("5" + 2);
+    console.log(10 + "5"); 
+    console.log("5" * "4");
+    console.log("k" * "4");
+    console.log(true + 1);
+
+
 
 
