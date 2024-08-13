@@ -1,14 +1,15 @@
 // Data Types
 // 1.Numbers
+// Numbers in JS represent both integers and floating-point values. They support arithmetic operations
     console.log("----------------------");
     console.log(2+5);
     console.log(20 - 30);
     console.log(1.5+2.0);
-    console.log("8"*10);
+    console.log("8a"*10);
     console.log(7/2);
     console.log(10 % 3);
     
-// 2.Special Numbers
+// 2.Special Numbers(in JS include specific values used to represent unique numeric conditions.)
 
     // (i)Infinity
     console.log("----------------------");
@@ -23,10 +24,10 @@
     console.log(-100 / 0);        
     console.log(-200 / 0);
     console.log(-50 / 0);         
-    console.log(-1e308 * 2); 
+    console.log(-1e308 / 2); 
     console.log(-10e308);
 
-    // (iii)NaN 
+    // (iii)NaN ( NaN is used to indicate an invalid or undefined numerical operation.)
     console.log("----------------------");
     console.log("k"*"k");
     console.log(0 / 0);
@@ -37,7 +38,7 @@
 //  3.String
     console.log("----------------------");
     console.log("Hello guys");
-    console.log('funny program');
+    console.log('\'funny\' program');
     console.log(`In the year ${20001}`);
     console.log("hii\nhow r u?");
     console.log("Concatenation" + "works!");
@@ -49,6 +50,7 @@
     console.log(6>4>1)
     console.log(true||false);
     console.log(true&&false);
+    console.log(!!"")
 
 // 5.Empty value
     console.log("----------------------");
@@ -88,7 +90,7 @@
     console.log("----------------------");
     console.log("5" + 2);
     console.log(10 + "5"); 
-    console.log("5" * "4");
+    console.log("5" * 4);
     console.log("k" * "4");
     console.log(true + 1);
 
