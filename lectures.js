@@ -82,7 +82,44 @@
        console.log(10 > 5);
        console.log('5' === 5);
        console.log('5' != 5);
-       */
+*/
+
+//7. Logical Operators
+/* >logical operators are used to perform logical operations on boolean values and evaluate expressions.
+    The main types are AND (&&), OR (||), and NOT (!).
+   >console.log(true && false);
+    console.log(false && false);
+    console.log(false && true);
+    console.log(true || false);
+    console.log(true || true);
+    console.log(0 || 5);
+    console.log(!false);
+    console.log(!0);
+    console.log(!'hello');
+    */
+//8. Ternary Operators
+/*  > Ternary is operator is a concise way to perform conditional evaluations.
+      It is a short way for the if - else statemennt,it is used for simple conditional expressions.
+    > console.log(5 > 2?"greater":"smaller" );
+    > let score=80;
+      let result =score>=80?"pass":"fail"
+      console.log(result)
+    > let age=18;
+      let vote=age>18?"canvote":"can not vote"
+*/
+
+//9. Template Literals
+/*  >template literals are a feature that makes working with strings easier. They use backticks (`) and support multi-line strings, string interpolation (embedding variables), and expressions directly within strings.
+    > let firstName="keerthi"
+      let lastName="keerthana";
+      console(`Fullname:${firstName} ${lastName}`)
+    > let a = 10;
+      let b = 5;
+      console.log(`the product of ${a} and ${b} is ${a*b}.`)
+    > let num1 = 8;
+      let num2 = 12;
+      console.log(`The average of ${num1} and ${num2} is ${(num1 + num2) / 2}.`);
+*/
 
       
    
