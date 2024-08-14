@@ -61,6 +61,29 @@
     console.log(10 + ""); 
     console.log("5" / "4");
     console.log("hi" * "4");
+    console.log(parseInt("225 hello"));
     */
+
+// 5. Arithmetic Operators
+/*  >This operators perform mathematical calculations on numeric values
+    > let a = 4;
+      let b = 2;
+      let sum= a+b
+      console.log(a + b);
+      console.log(a-b);
+      console.log(a/b);
+      console.log(a*b);
+*/
+
+//6. Relational Operators
+/*   > It is used to compare two values and determine thier relationship to each other.
+       they return a boolean value based on the comparision.
+     > console.log(2 == 2);
+       console.log(10 > 5);
+       console.log('5' === 5);
+       console.log('5' != 5);
+       */
+
+      
    
     
