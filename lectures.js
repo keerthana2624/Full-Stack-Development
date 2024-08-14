@@ -11,5 +11,45 @@
 
 
 
-
+// 2. Data Types in JavaScript - 1
+/* > Data types are important  for storing and manipulating data in programming
+   > They are categories in to two types one is primitive and another is object types.
+   > primitive data types include numbers,strings,boolean,null,undefied
+   > number represent both integer and floating-point values, and different base number system can be used 
+   Examples:
+    >console.log(7+5);
+    >let num=25458664125
+     console.log(num*25)
+    >let num=2.5
+     console.log(typeof num);
+    */
+// 3. Data Types in JavaScript - 2
+/* > A string is a collection of characters enclosed in single quotes('')
+     double quotes(""),backticks(` `) 
+     console.log("hello keerthi")
+     let firstName="keerthi"
+     let lastName="keerthana";
+     console(firstName+lastName)
+     console.log("good evening\thow r u?")
+   > A boolean is a primitive data type that can only be either true or false.
+     console.log(5 > 3);
+     console.log(Boolean(1));
+     console.log(true && false);
+     console.log(!true);
+   > undefined is a primitive data type that indicates that a variable has been declared but has not been assigned a value.
+     let a;
+     console.log(a);
+     let b;
+     console.log(typeof b);
+   > null is a primitive data type in JavaScript that explicitly denotes the absence of any value.
+     let b = null;
+     console.log(b); 
+     let x = null;
+     console.log(x === null);
+   >NaN is nothing but not a number
+    let x=0/0;
+    console.log(x);
+    console.log(typeof NaN);
+     console.log("10" - "five");
+   */
 
