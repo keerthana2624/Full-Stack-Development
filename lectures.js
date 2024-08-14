@@ -23,6 +23,7 @@
     >let num=2.5
      console.log(typeof num);
     */
+
 // 3. Data Types in JavaScript - 2
 /* > A string is a collection of characters enclosed in single quotes('')
      double quotes(""),backticks(` `) 
@@ -50,6 +51,16 @@
     let x=0/0;
     console.log(x);
     console.log(typeof NaN);
-     console.log("10" - "five");
+    console.log("10" - "five");
    */
 
+// 4. Type Conversion and Coercion
+/* > Type conversion is the process of converting a value from one data type to another and
+     Type coercion is the automatic conversion of values from one data type to another by JavaScript during operations.
+   >console.log("25" + 2);
+    console.log(10 + ""); 
+    console.log("5" / "4");
+    console.log("hi" * "4");
+    */
+   
+    
