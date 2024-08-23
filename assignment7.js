@@ -33,6 +33,9 @@ function rangeaddsum(start,end,step){
 }
 // console.log(rangeaddsum(1,10,1))
 
+
+
+
 // Q2. REVERSING AN ARRAY
 
 
@@ -45,3 +48,23 @@ function reversArray(array){
 }
 // console.log(reversArray(["k","e","e","r","t","h","i"]))
 
+
+
+
+
+// Function to reverse the elements of the array in place
+function reverseArrayInPlace(arr){
+    let left=0;
+    let right=arr.length-1;
+    while (left<right){
+        let temp = arr[left];
+        arr[left] = arr[right]
+        arr[right] = temp;
+
+        left++;
+        right--;
+    }
+    return arr
+}
+console.log(reverseArrayInPlace([1,3,5,7,9]))
+console.log(reverseArrayInPlace([9,7,5,3,1]))
