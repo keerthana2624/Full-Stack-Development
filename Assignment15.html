@@ -25,7 +25,7 @@ Once you have this working, right-align cells that contain number values by sett
 property to "right". -->
 
 
-<h1>Mountains</h1>
+<!-- <h1>Mountains</h1>
 <div id="mountains"></div>
 
 <script>
@@ -70,5 +70,99 @@ function buildTable(data) {
 
 const mountainsDiv = document.getElementById('mountains');
 mountainsDiv.appendChild(buildTable(MOUNTAINS));
-</script>
+</script> -->
 
+<!-- 
+Q2. Elements by tag name
+The document.getElementsByTagName method returns all child elements with a given tag name. Implement
+your own version of this as a function that takes a node and a string (the tag name) as arguments and returns
+an array containing all descendant element nodes with the given tag name. Your function should go through
+the document itself. It may not use a method like querySelectorAll to do the work.
+To find the tag name of an element, use its nodeName property. But note that this will return the tag name in
+all uppercase. Use the toLowerCase or toUpperCase string methods to compensate for this. -->
+
+<!-- <h1>Heading with a <span>span</span> element.</h1>
+<p>A paragraph with <span>one</span>, <span>two</span>
+spans.</p>
+<script>
+function byTagName(node, tagName) {
+// Your code here.
+let elements = []; 
+    tagName = tagName.toUpperCase(); 
+    // Helper function for recursive traversal
+    function traverse(node) {
+        if (node.nodeType === document.ELEMENT_NODE && node.nodeName === tagName) {
+            elements.push(node); // Add to the elements array
+        }
+        for (let i = 0; i < node.childNodes.length; i++) {
+            traverse(node.childNodes[i]);
+        }
+    }
+
+    traverse(node); 
+    return elements; 
+}
+console.log(byTagName(document.body, "h1").length);
+// → 1
+console.log(byTagName(document.body, "span").length);
+// → 3
+let para = document.querySelector("p");
+console.log(byTagName(para, "span").length);
+// → 2
+</script>  -->
+
+
+<!-- Q3. Mouse trail
+In JavaScript’s early days, which was the high time of gaudy home pages with lots of animated images, people
+came up with some truly inspiring ways to use the language. One of these was the mouse trail—a series of
+elements that would follow the mouse pointer as you moved it across the page.
+In this exercise, I want you to implement a mouse trail. Use absolutely positioned <div> elements with a fixed
+size and background color (refer to the code in the “Mouse Clicks” section for an example). Create a bunch of
+these elements and, when the mouse moves, display them in the wake of the mouse pointer.
+There are various possible approaches here. You can make your trail as simple or as complex as you want. A
+simple solution to start with is to keep a fixed number of trail elements and cycle through them, moving the
+next one to the mouse’s current position every time a "mousemove" event occurs. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Trail</title>
+  <style>
+    .trail {
+      position: absolute;
+      height: 6px;
+      width: 6px;
+      border-radius: 3px;
+      background: rgb(10, 157, 149);
+      pointer-events: none; 
+    }
+    body {
+      height: 300px;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const trailSize = 12; 
+    const trailElements = []; 
+    let currentTrailIndex = 0;
+    for (let i = 0; i < trailSize; i++) {
+      const trailElement = document.createElement("div");
+      trailElement.className = "trail";
+      document.body.appendChild(trailElement);
+      trailElements.push(trailElement); 
+    }
+    window.addEventListener("mousemove", (event) => {
+      const trailElement = trailElements[currentTrailIndex];
+      trailElement.style.left = event.pageX + "px";
+      trailElement.style.top = event.pageY + "px";
+      currentTrailIndex = (currentTrailIndex + 1) % trailSize;
+    });
+  </script>
+</body>
+</html>
